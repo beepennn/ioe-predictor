@@ -9,5 +9,12 @@
     { "src": "/favicon.ico", "dest": "/public/favicon.ico" },
     { "src": "/logo.svg", "dest": "/public/logo.svg" },
     { "src": "/(.*)", "dest": "/index.html" }
+  ],
+  "redirects": [
+    {
+      "source": "/ioe-marks-predictor(/.*)?",
+      "destination": "https://ioe.bipinlamsal11.com.np",
+      "permanent": true
+    }
   ]
 }
