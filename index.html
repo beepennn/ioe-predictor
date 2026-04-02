@@ -1342,6 +1342,7 @@
         function init() {
             if (typeof SUBJECT_DATA !== 'undefined') {
                 showUI(SUBJECT_DATA);
+                restoreTheme();
             } else {
                 document.getElementById('loaderSpinner').style.display = 'none';
                 var t = document.getElementById('loaderText');
@@ -2439,6 +2440,22 @@
             printOrigValues = null;
             printOrigFooter = null;
         });
+
+        function toggleTheme() {
+            var html = document.documentElement;
+            var isDark = html.getAttribute('data-theme') === 'dark';
+            html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+            try { localStorage.setItem('ioe_theme', isDark ? 'light' : 'dark'); } catch(e) {}
+        }
+        // Restore saved theme
+        (function() {
+            try {
+                var saved = localStorage.getItem('ioe_theme');
+                if (saved === 'dark') {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                }
+            } catch(e) {}
+        })();
 
         // Init
         init();
