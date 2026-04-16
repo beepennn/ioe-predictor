@@ -1137,10 +1137,13 @@
 
     <!-- Page Footer -->
     <div class="page-footer" id="pageFooter" style="display:none;">
-        © {new Date().getFullYear()} <span className="text-slate-300 font-medium">Engineering Notes</span>.
+        © <span id="year"></span> <span class="text-slate-300 font-medium">Engineering Notes</span>.
         All rights reserved.
     </div>
 
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>    
     </div><!-- /page-wrap -->
 
     <!-- Subject Info Modal -->
@@ -1164,8 +1167,6 @@
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/data/subject-data.js"></script>
     <script>
-        // Set the current year dynamically
-        document.getElementById('year').textContent = new Date().getFullYear();
         /* ============================================================
            Faculty name mapping
         ============================================================ */
