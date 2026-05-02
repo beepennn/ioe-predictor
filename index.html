@@ -1203,7 +1203,8 @@
             'sem1': 'I / I', 'sem2': 'I / II',
             'sem3': 'II / I', 'sem4': 'II / II',
             'sem5': 'III / I', 'sem6': 'III / II',
-            'sem7': 'IV / I', 'sem8': 'IV / II'
+            'sem7': 'IV / I', 'sem8': 'IV / II',
+            'sem9': 'V / I', 'sem10': 'V / II'
         };
 
         /* ============================================================
@@ -1530,10 +1531,9 @@
 
             var semSel = document.getElementById('semSelect');
             semSel.innerHTML = '';
-            var sems = Object.keys(allData[fac]).filter(function(s) {
-                return parseInt(s.replace('sem','')) <= 8;
-            }).sort(function(a, b) {
+            var sems = Object.keys(allData[fac]).filter(function(a, b) {
                 return parseInt(a.replace('sem','')) - parseInt(b.replace('sem',''));
+            
             });
             sems.forEach(function(s) {
                 var opt = document.createElement('option');
