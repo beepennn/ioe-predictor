@@ -1454,6 +1454,8 @@
                 { code: 'ENCE 461', title: 'Project II', credit: 4, asstFM: 100, finalFM: 50, passAsst: 40, passFinal: 20, practical: true },
                 { code: 'ENCE 462', title: 'Internship', credit: 6, asstFM: 100, finalFM: 100, passAsst: 40, passFinal: 40, practical: true }
             ];
+
+            // Override BCT semesters 6-8 with correct new curriculum
             if (!allData['BCT']) allData['BCT'] = {};
             allData['BCT']['sem6'] = [
                 { code: 'ENCE 356', title: 'Engineering Economics', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
@@ -1485,6 +1487,21 @@
                 { code: 'ENCT 465-474', title: 'Elective IV (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
                 { code: 'ENCT 462', title: 'Internship', credit: 4, asstFM: 100, finalFM: 50, passAsst: 40, passFinal: 20, practical: true },
                 { code: 'ENCT 461', title: 'Project II', credit: 4, asstFM: 100, finalFM: 50, passAsst: 40, passFinal: 20, practical: true }
+            ];
+
+            // Override BAR semesters 6-10 with correct new curriculum
+            if (!allData['BAR']) allData['BAR'] = {};
+            allData['BAR']['sem6'] = [
+                { code: 'ENAR 351', title: 'Design Studio VI', credit: 8, asstFM: 250, finalFM: 0, passAsst: 100, passFinal: 0, practical: true },
+                { code: 'ENAR 352', title: 'Building Construction IV', credit: 2, asstFM: 20, finalFM: 30, passAsst: 8, passFinal: 12, practical: false },
+                { code: 'ENAR 352', title: 'Building Construction IV (Practical)', credit: 0, asstFM: 50, finalFM: 0, passAsst: 20, passFinal: 0, practical: true },
+                { code: 'ENAR 353', title: 'Human Settlement Planning', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENAR 365-384', title: 'Elective I', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENCE 359', title: 'Estimation and Specification', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENCE 358', title: 'Building Services I', credit: 2, asstFM: 20, finalFM: 30, passAsst: 8, passFinal: 12, practical: false },
+                { code: 'ENCE 358', title: 'Building Services I (Practical)', credit: 0, asstFM: 50, finalFM: 0, passAsst: 20, passFinal: 0, practical: true },
+                { code: 'ENEE 356', title: 'Building Services II', credit: 2, asstFM: 20, finalFM: 30, passAsst: 8, passFinal: 12, practical: false },
+                { code: 'ENEE 356', title: 'Building Services II (Practical)', credit: 0, asstFM: 50, finalFM: 0, passAsst: 20, passFinal: 0, practical: true }
             ];
         }
 
