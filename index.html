@@ -1470,7 +1470,7 @@
             var semSel = document.getElementById('semSelect');
             semSel.innerHTML = '';
             var sems = Object.keys(allData[fac]).filter(function(s) {
-                return parseInt(s.replace('sem','')) <= 5;
+                return parseInt(s.replace('sem','')) <= 8;
             }).sort(function(a, b) {
                 return parseInt(a.replace('sem','')) - parseInt(b.replace('sem',''));
             });
