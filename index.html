@@ -1526,6 +1526,40 @@
              allData['BAR']['sem10'] = [
                 { code: 'ENAR 561', title: 'Thesis', credit: 16, asstFM: 240, finalFM: 160, passAsst: 96, passFinal: 64, practical: true }
             ];
+
+            // Override BEI semesters 6-8 with correct new curriculum
+            if (!allData['BEI']) allData['BEI'] = {};
+            allData['BCT']['sem6'] = [
+                { code: 'ENCT 355', title: 'ICT Project Management', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENCE 356', title: 'Engineering Economics', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENEX 351', title: 'Communication Systems', credit: 4, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENEX 351', title: 'Communication Systems (Practical)', credit: 0, asstFM: 50, finalFM: 0, passAsst: 20, passFinal: 0, practical: true },
+                { code: 'ENEX 352', title: 'Telecommunication and Computer Networks', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENEX 352', title: 'Telecommunication and Computer Networks (Practical)', credit: 0, asstFM: 50, finalFM: 0, passAsst: 20, passFinal: 0, practical: true },
+                { code: 'ENEX 353', title: 'Minor Project', credit: 1, asstFM: 50, finalFM: 0, passAsst: 20, passFinal: 0, practical: true },
+                { code: 'ENEX 385-399', title: 'Elective II', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENEX 385-399', title: 'Elective II (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true }
+            ];
+            allData['BCT']['sem7'] = [
+                { code: 'ENEX 411', title: 'RF and Microwave Engineering', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENEX 411', title: 'RF and Microwave Engineering (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
+                { code: 'ENEX 412', title: 'Robotics', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENEX 412', title: 'Robotics (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
+                { code: 'ENEX 413', title: 'Digital Signal Processing', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENEX 413', title: 'Digital Signal Processing (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
+                { code: 'ENEX 435-444', title: 'Elective III', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical:false },
+                { code: 'ENEX 435-444', title: 'Elective III (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
+                { code: 'ENCT 404', title: 'Project I', credit: 2, asstFM: 50, finalFM: 0, passAsst: 20, passFinal: 0, practical: true },
+                { code: 'ENEX 415', title: 'Wireless Communication', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical:false },
+                { code: 'ENEX 415', title: 'Wireless Communication (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
+            ];
+            allData['BCT']['sem8'] = [
+                { code: 'ENEX 463', title: 'Energy, Environment and Social Engineering', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENCT 462', title: 'Internship', credit: 4, asstFM: 100, finalFM: 50, passAsst: 40, passFinal: 20, practical: true },
+                { code: 'ENEX 465-484', title: 'Elective IV', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical:false },
+                { code: 'ENEX 465-484', title: 'Elective IV (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
+                { code: 'ENEX 461', title: 'Project II', credit: 4, asstFM: 100, finalFM: 50, passAsst: 40, passFinal: 20, practical: true }
+            ];
         }
 
         /* ============================================================
