@@ -1425,6 +1425,85 @@
                     }
                 });
             }
+
+            // Override BAM semesters 3-8 with correct new curriculum
+            if (!allData['BAM']) allData['BAM'] = {};
+            allData['BAM']['sem3'] = [
+                { code: 'ENSH 201', title: 'Engineering Mathematics III', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENME 201', title: 'Material Science', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENME 201', title: 'Material Science (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
+                { code: 'ENME 205', title: 'Strength of Materials', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENME 205', title: 'Strength of Materials (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
+                { code: 'ENME 206', title: 'Applied Thermodynamics and Heat Transfer', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENME 206', title: 'Applied Thermodynamics and Heat Transfer (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
+                { code: 'ENAS 201', title: 'Fundamentals of Aerospace Engineering', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENAS 201', title: 'Fundamentals of Aerospace Engineering (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
+                { code: 'ENAS 202', title: 'Introduction to CubeSats', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENAS 203', title: 'Composite Materials', credit: 2, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false }
+            ];
+            allData['BAM']['sem4'] = [
+                { code: 'ENSH 253', title: 'Probability and Statistics', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENEE 254', title: 'Electrical Machines', credit: 4, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENEE 254', title: 'Electrical Machines (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
+                { code: 'ENME 253', title: 'Computer Aided Design', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENME 253', title: 'Computer Aided Design (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
+                { code: 'ENME 254', title: 'Fluid Mechanics with Engineering Applications', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENME 254', title: 'Fluid Mechanics with Engineering Applications (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
+                { code: 'ENME 257', title: 'Theory of Machine', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENAS 251', title: 'Monitoring and Instrumentation', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical:false },
+                { code: 'ENAS 251', title: 'Monitoring and Instrumentation (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
+                { code: 'ENAS 252', title: 'Aircraft Manufacturing Process', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical:false },
+                { code: 'ENAS 252', title: 'Aircraft Manufacturing Process (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true }
+            ];
+            allData['BAM']['sem5'] = [
+                { code: 'ENEE 307', title: 'Control System and Automation', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENEE 307', title: 'Control System and Automation (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
+                { code: 'ENME 306', title: 'Machine Design', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENME 306', title: 'Machine Design (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
+                { code: 'ENSH 301', title: 'Numerical Methods', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENSH 301', title: 'Numerical Methods (Practical)', credit: 0, asstFM: 50, finalFM: 0, passAsst: 20, passFinal: 0, practical: true },
+                { code: 'ENAS 301', title: 'Avionics', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENAS 301', title: 'Avionics (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
+                { code: 'ENAS 302', title: 'Continuum Mechanics', credit: 2, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical:false },
+                { code: 'ENAS 302', title: 'Continuum Mechanics (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
+                { code: 'ENAS 303', title: 'Aircraft Propulsion', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENAS 304', title: 'Aerodynamics', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical:false },
+                { code: 'ENAS 304', title: 'Aerodynamics (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true }
+            ];
+            allData['BAM']['sem6'] = [
+                { code: 'ENME 356', title: 'Professional Engineering Economics', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENAS 351', title: 'Aviation Maintenance Engineering', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENAS 352', title: 'Aircraft Systems', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENAS 352', title: 'Aircraft Systems (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
+                { code: 'ENAS 353', title: 'Flight Dynamics', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENAS 353', title: 'Flight Dynamics (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
+                { code: 'ENAS 354', title: 'Unmanned Aerial Systems', credit: 2, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical:false },
+                { code: 'ENAS 354', title: 'Unmanned Aerial Systems (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
+                { code: 'ENAS 355', title: 'Finite Element Analysis', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENAS 365-374', title: 'Elective I', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical:false },
+                { code: 'ENAS 365-374', title: 'Elective I (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true }
+            ];
+            allData['BAM']['sem7'] = [
+                { code: 'ENAS 411', title: 'Aircraft Preliminary Design', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENAS 411', title: 'Aircraft Preliminary Design (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
+                { code: 'ENAS 412', title: 'Computational Fluid Dynamics', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENAS 412', title: 'Computational Fluid Dynamics (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
+                { code: 'ENAS 413', title: 'Aircraft Structures', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENAS 413', title: 'Aircraft Structures (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
+                { code: 'ENAS 414', title: 'Human Factors in Aviation', credit: 2, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
+                { code: 'ENAS 415', title: 'Aviation Professional Practice', credit: 2, asstFM: 20, finalFM: 30, passAsst: 8, passFinal: 12, practical:false },
+                { code: 'ENAS 425-434', title: 'Elective II', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical:false },
+                { code: 'ENAS 425-434', title: 'Elective II (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
+                { code: 'ENAS 416', title: 'Project I', credit: 2, asstFM: 50, finalFM: 0, passAsst: 20, passFinal: 0, practical: true }
+            ];
+            allData['BAM']['sem8'] = [
+                { code: 'ENAS 462', title: 'Industrial Attachement', credit: 4, asstFM: 100, finalFM: 0, passAsst: 40, passFinal: 0, practical: true },
+                { code: 'ENAS 416', title: 'Project II', credit: 4, asstFM: 100, finalFM: 0, passAsst: 40, passFinal: 0, practical: true },
+                { code: 'ENAS 465-474', title: 'Elective III', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical:false },
+                { code: 'ENAS 465-474', title: 'Elective III (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true }
+            ];
+
+
             // Override BCE semesters 6-8 with correct new curriculum
             if (!allData['BCE']) allData['BCE'] = {};
             allData['BCE']['sem6'] = [
@@ -1460,7 +1539,7 @@
             allData['BCT']['sem6'] = [
                 { code: 'ENCE 356', title: 'Engineering Economics', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
                 { code: 'ENCT 351', title: 'Artificial Intelligence', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
-                { code: 'ENCT 351', title: 'Artificial Intelligence (Practical)', credit: 0, asstFM: 50, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
+                { code: 'ENCT 351', title: 'Artificial Intelligence (Practical)', credit: 0, asstFM: 50, finalFM: 0, passAsst: 20, passFinal: 0, practical: true },
                 { code: 'ENCT 352', title: 'Software Engineering', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
                 { code: 'ENCT 352', title: 'Software Engineering (Practical)', credit: 0, asstFM: 25, finalFM: 0, passAsst: 10, passFinal: 0, practical: true },
                 { code: 'ENCT 353', title: 'Simulation and Modeling', credit: 3, asstFM: 40, finalFM: 60, passAsst: 16, passFinal: 24, practical: false },
